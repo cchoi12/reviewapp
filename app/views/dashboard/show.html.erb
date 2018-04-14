@@ -5,8 +5,4 @@
   <%= form.submit 'Yell' %>
 <% end %>
 
-<% @megaphones.each do |megaphone| %>
-  <div class="megaphones">
-    <%= megaphone.body %>
-  </div>
-<% end %>
+<%= render @megaphones %> 

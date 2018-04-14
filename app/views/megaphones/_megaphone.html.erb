@@ -1,0 +1,7 @@
+<div class="megaphones">
+  <%= link_to megaphone.username, megaphone.user %>
+  <%= megaphone.body %>
+  <%= link_to megaphone do %>
+    <%= time_ago_in_words(megaphone.created_at) %> ago
+  <% end %>
+</div>

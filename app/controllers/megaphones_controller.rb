@@ -1,6 +1,6 @@
 class MegaphonesController < ApplicationController
-  def new
-
+  def show
+    @megaphone = Megaphone.find(params[:id])
   end
 
   def create
