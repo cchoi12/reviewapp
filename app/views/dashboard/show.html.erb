@@ -1,1 +1,12 @@
 <h1>Dashboard</h1>
+
+<%= form_for @megaphone do |form| %>
+  <%= form.text_field :body, placeholder: 'yell it', required: true %>
+  <%= form.submit 'Yell' %>
+<% end %>
+
+<% @megaphones.each do |megaphone| %>
+  <div class="megaphones">
+    <%= megaphone.body %>
+  </div>
+<% end %>
